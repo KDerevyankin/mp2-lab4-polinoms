@@ -5,6 +5,8 @@ int main()
 	Polinom A, B, ADD, SUB, MUL, MUL_NUMBER;
 	double NUMBER;
 	int choice;
+	cout << "The degree is entered as a three-digit number. For example," << endl;
+	cout << "if you want to enter the power of x^3 y^0 z^5, you would enter 305";
 	cout << endl << "Entering the polynomial:  ";
 	A.Input(); 
 	cout << "Your polynomial: "; 
@@ -49,7 +51,7 @@ int main()
 			}
 			else
 			{
-				cout << "The degree of a polynomial is outside the scope of this implementation." << endl;
+				cout << "The degree of a polynomial is outside the scope of this implementation (degree > 9)" << endl;
 			}
 			break;
 		default:
