@@ -22,7 +22,6 @@ class Polinom
 {
 private:
 	List<Monom> P;
-	friend class List<Monom>;
 public:
 	Polinom();
 	~Polinom();

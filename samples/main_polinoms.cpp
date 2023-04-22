@@ -43,8 +43,15 @@ int main()
 			cout << "Subtraction:  "; SUB.Print();  cout << endl;
 			break;
 		case 3:
-			MUL = A * B;
 			cout << "Multiplication:  ";
+			try
+			{
+				MUL = A * B;
+			}
+			catch (const std::exception&ex)
+			{
+				cout << ex.what();
+			}
 			if (MUL.Highest_Degree() < 999)
 			{
 				MUL.Print();  cout << endl << endl;

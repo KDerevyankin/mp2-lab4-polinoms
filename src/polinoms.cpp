@@ -38,18 +38,21 @@ Monom Monom::operator*(const Monom& m)
 	a = deg / 100 + m.deg / 100;
 	b = deg % 100 / 10 + m.deg % 100 / 10;
 	c = deg % 10 + m.deg % 10;
-	return res;
+	if (a > 9 || b > 9 || c > 9)
+		throw exception("Error. The degree of a polynomial is outside the scope of this implementation (degree > 9)");
+	else
+		return res;
 }
 
 bool Monom::operator!=(Monom a)
 {
 	if (a == *this)
 	{
-		return true;
+		return false;
 	}
 	else
 	{
-		return false;
+		return true;
 	}
 }
 
