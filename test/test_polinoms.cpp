@@ -88,7 +88,7 @@ TEST(Polinom, add_polinom)
 	f.coeff = 3;
 	f.deg = 111;
 	f.coeff = 7;
-	f.deg = 111;
+	f.deg = 222;
 	c.init(f);
 
 	EXPECT_EQ(a + b, c);
@@ -114,7 +114,7 @@ TEST(Polinom, sub_polinom)
 	f.coeff = 2;
 	f.deg = 111;
 	f.coeff = -1;
-	f.deg = 111;
+	f.deg = 222;
 	c.init(f);
 
 	EXPECT_EQ(a - b, c);
@@ -135,7 +135,7 @@ TEST(Polinom, mult_polinom_on_const)
 	n.coeff = 3;
 	n.deg = 222;
 	n.coeff = 9;
-	n.deg = 111;
+	n.deg = 222;
 	b.init(n);
 
 	EXPECT_EQ(a * q, b);
